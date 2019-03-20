@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Docker入门系列 - Windows系统上安装Docker"
-date:   2019-03-18 21:37:58 -0500
+date:   2019-03-18 21:37:58 +0800
 categories: posts
 author: jasydong
 ---
@@ -9,7 +9,7 @@ author: jasydong
 
 本教程安装环境：`Windows 10` 家庭版, 当然`Winodws 7`, `Windows 8`等早期版本安装本教程同样适用)
 
-Docker引擎使用了一个定制的Linux内核，所以要在Windows下运行Docker我们需要用到一个轻量级的`虚拟机`(VM)，我们使用Windows Docker客户端以控制Docker引擎，来创建，运行和管理我们的Docker容器。
+Docker引擎使用了一个定制的`Linux`内核，所以要在`Windows`下运行`Docker`我们需要用到一个轻量级的`虚拟机`(Docker捆绑的是`VirtualBox`虚拟机)，安装完成后我们可以使用`Docker QuickStart`客户端或`Kitematic`控制Docker引擎来创建，运行我们的Docker容器。
 
 ## 安装步骤
 
