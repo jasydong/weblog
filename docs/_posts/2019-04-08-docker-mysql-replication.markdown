@@ -62,7 +62,7 @@ relay_log=mysql-relay-bin
 ```
 2.5 链接Master和Slave实例
 
-首先在Master实例上执行
+首先在Master实例终端中执行
 ```
 show master status;
 ```
@@ -70,14 +70,14 @@ show master status;
 
 ![Master Status](https://jasydong.github.io/assets/images/mysql/mysql_master_status.png)
 
-记录下`File`字段和`Position`字段对应的值, 然后在Slave实例上执行
+记录下`File`字段和`Position`字段对应的值, 然后在Slave实例终端中执行
 ```
 change master to master_host='172.17.0.3', master_port=3306, master_user='slave', master_password='123456', master_log_file='mysql-bin.000001', master_log_pos=313, master_connect_retry=30;
 ```
 *上面命令说明:*
 
-| 字段名    |  值                    |
-|----------|-------------------:    |
+| 字段名    |  值               |
+|----------|-------------------|
 | master_host | 指的是Master实例的IP |
 | master_port | 指的是Master实例的端口 |
 | master_user | 指的是在Master实例上创建的用来数据同步的账号 |
