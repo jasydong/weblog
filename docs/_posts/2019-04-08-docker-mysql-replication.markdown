@@ -94,7 +94,7 @@ show slave status \G;
 
 ![Slave Status](https://jasydong.github.io/assets/images/mysql/mysql_slave_status.png)
 
-正常情况下`SlaveIORunning`和`SlaveSQLRunning`字段都是No，因为我们还没有开启主从复制，接下来输入下面命令开启主从复制
+正常情况下`Slave_IO_Running`和`Slave_SQL_Running`字段都是No，因为我们还没有开启主从复制，接下来输入下面命令开启主从复制
 
 ```
 start slave;
@@ -107,4 +107,4 @@ show slave status \G;
 得到Slave实例的主从同步状态信息，如下图
 ![Slave Status 2](https://jasydong.github.io/assets/images/mysql/mysql_slave_status2.png)
 
-这次`SlaveIORunning`和`SlaveSQLRunning`都是Yes，说明主从复制已经成功开启
+这次`Slave_IO_Running`和`Slave_SQL_Running`都是Yes，说明主从复制已经成功开启
